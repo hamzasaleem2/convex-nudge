@@ -1,0 +1,55 @@
+# Source files
+src/
+*.ts
+*.tsx
+*.vue
+*.svelte
+
+# Build files
+tsconfig.json
+vite.config.ts
+svelte.config.js
+
+# Test files
+__tests__/
+*.test.ts
+*..spec.ts
+vitest.config.ts
+
+# Development files
+.eslintrc
+.prettierrc
+.editorconfig
+
+# Git files
+.git
+.gitignore
+.npmignore
+
+# Misc
+.DS_Store
+*.log
+coverage/
+
+# Config files
+tsup.config.ts
+.prettierrc
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment
+.env*
+
+# Build artifacts
+.nyc_output/
+*.tsbuildinfo 

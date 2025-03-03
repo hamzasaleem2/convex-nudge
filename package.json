@@ -1,0 +1,29 @@
+{
+  "name": "convex-nudge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A beautiful and customizable Convex Nudge component for multiple frameworks",
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "keywords": [
+    "convex",
+    "ui",
+    "component",
+    "react",
+    "vue",
+    "svelte",
+    "remix",
+    "branding"
+  ],
+  "author": "hamzasaleem2",
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "typescript": "^5.3.3"
+  }
+}
