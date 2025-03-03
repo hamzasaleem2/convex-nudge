@@ -1,6 +1,6 @@
 {
   "name": "@convex-nudge/svelte",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A beautiful and customizable Convex Nudge component for multiple frameworks",
   "type": "module",
   "main": "./dist/index.js",
@@ -34,4 +34,4 @@
     "typescript": "^5.0.0",
     "vitest": "^1.0.0"
   }
-} 
+}

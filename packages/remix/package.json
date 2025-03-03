@@ -1,6 +1,6 @@
 {
   "name": "@convex-nudge/remix",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A beautiful and customizable Convex Nudge component for multiple frameworks",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -46,4 +46,4 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   }
-} 
+}
