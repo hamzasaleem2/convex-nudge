@@ -1,6 +1,6 @@
 {
   "name": "@convex-nudge/core",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A beautiful and customizable Convex Nudge component for multiple frameworks",
   "type": "module",
   "main": "./dist/index.cjs",

@@ -1,6 +1,6 @@
 {
   "name": "@convex-nudge/vue",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A beautiful and customizable Convex Nudge component for multiple frameworks",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -35,7 +35,7 @@
     "vue": "^3.0.0"
   },
   "dependencies": {
-    "@convex-nudge/core": "workspace:*"
+    "@convex-nudge/core": "^2.0.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.0",
