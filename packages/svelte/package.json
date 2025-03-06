@@ -1,6 +1,6 @@
 {
   "name": "@convex-nudge/svelte",
-  "version": "2.0.1",
+  "version": "2.0.0",
   "description": "A beautiful and customizable Convex Nudge component for multiple frameworks",
   "type": "module",
   "main": "./dist/index.js",
@@ -24,7 +24,7 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@convex-nudge/core": "^2.0.0"
+    "@convex-nudge/core": "workspace:*"
   },
   "peerDependencies": {
     "svelte": "^4.0.0"
