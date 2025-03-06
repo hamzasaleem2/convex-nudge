@@ -20,7 +20,6 @@ export type ConvexNudgeProps = NudgeOptions;
 
 export const ConvexNudge = ({
   className = DEFAULT_OPTIONS.className,
-  link,
   referralCode = DEFAULT_OPTIONS.referralCode,
   logoSize = DEFAULT_OPTIONS.logoSize,
   textSize = DEFAULT_OPTIONS.textSize,
@@ -76,7 +75,7 @@ export const ConvexNudge = ({
       <div className={className} style={containerStyles}>
         <div style={lineStyles} />
         <a
-          href={getConvexUrl(link || referralCode)}
+          href={getConvexUrl(referralCode)}
           target="_blank"
           rel="noopener noreferrer"
           style={LINK_STYLES}

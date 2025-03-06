@@ -43,18 +43,6 @@ import {
 ```typescript
 type NudgeOptions = {
   className?: string;
-  link?: {
-    path?: string;
-    referralCode?: string;
-    utm?: {
-      source?: string;
-      medium?: string;
-      campaign?: string;
-      term?: string;
-      content?: string;
-    }
-  };
-  /** @deprecated Use link.referralCode instead */
   referralCode?: string;
   logoSize?: number;
   textSize?: 'xs' | 'sm' | 'base';
@@ -74,7 +62,7 @@ type NudgeOptions = {
 - `getAnimationStyles(animation, position)`: Get animation styles
 - `getTextSize(size)`: Get text size in pixels
 - `getAnimationKeyframes()`: Get CSS keyframes for animations
-- `getConvexUrl(options)`: Get Convex URL with optional path, referral code, and UTM parameters
+- `getConvexUrl(referralCode)`: Get Convex URL with referral code
 - `getInlineSvgUrl()`: Get the Convex logo SVG URL
 
 ### Style Constants

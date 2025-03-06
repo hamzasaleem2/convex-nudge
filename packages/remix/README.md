@@ -1,8 +1,6 @@
 # @convex-nudge/remix
 
-Remix implementation of the Convex Nudge component. A beautiful and customizable component to showcase your app's use of Convex.
-
-📦 [GitHub Repository](https://github.com/hamzasaleem2/convex-nudge)
+Remix implementation of the Convex Nudge component. A beautiful and customizable component to showcase your app's use of Convex in your Remix application.
 
 ## Installation
 
@@ -18,25 +16,29 @@ pnpm add @convex-nudge/remix
 
 ```tsx
 import { ConvexNudge } from '@convex-nudge/remix';
+import { useState } from 'react';
 
 export default function App() {
+  const [isVisible, setIsVisible] = useState(true);
+
+  const handleDismiss = () => {
+    setIsVisible(false);
+  };
+
   return (
-    <ConvexNudge
-      position="top-right"
-      variant="light"
-      dismissible={true}
-      textSize="medium"
-      fixed={true}
-      link={{
-        path: 'ai',  // Optional: Links to convex.dev/ai
-        referralCode: 'your-referral-code',
-        utm: {  // Optional: Add UTM parameters
-          source: 'your-app',
-          medium: 'nudge',
-          campaign: 'convex-ai'
-        }
-      }}
-    />
+    <div>
+      {isVisible && (
+        <ConvexNudge
+          position="top-right"
+          variant="light"
+          dismissible={true}
+          textSize="medium"
+          fixed={true}
+          onDismiss={handleDismiss}
+          referralCode="your-referral-code"
+        />
+      )}
+    </div>
   );
 }
 ```
@@ -52,15 +54,9 @@ export default function App() {
 | `fixed` | `boolean` | `true` | Whether to use fixed positioning |
 | `dismissible` | `boolean` | `true` | Whether to show dismiss button |
 | `zIndex` | `number` | `50` | CSS z-index |
-| `link` | `{ path?: string; referralCode?: string; utm?: { source?: string; medium?: string; campaign?: string; term?: string; content?: string; } }` | `undefined` | Link configuration with path, referral code and UTM parameters |
-| `referralCode` | `string` | `undefined` | Your Convex referral code (deprecated, use link.referralCode instead) |
+| `referralCode` | `string` | `undefined` | Your Convex referral code |
 | `animation` | `'slide' \| 'fade' \| 'none'` | `'slide'` | Animation type |
-
-## Features
-
-- 🔄 Automatically resets visibility on route changes
-- 🎨 All the customization options from @convex-nudge/react
-- 🎯 Optimized for Remix applications
+| `onDismiss` | `() => void` | `undefined` | Callback when nudge is dismissed |
 
 ## License
 

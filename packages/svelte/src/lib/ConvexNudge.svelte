@@ -18,7 +18,6 @@
   } from '@convex-nudge/core';
 
   export let className = DEFAULT_OPTIONS.className;
-  export let link: NudgeOptions['link'] = undefined;
   export let referralCode = DEFAULT_OPTIONS.referralCode;
   export let logoSize = DEFAULT_OPTIONS.logoSize;
   export let textSize = DEFAULT_OPTIONS.textSize;
@@ -85,7 +84,7 @@
     <div style={styleToString(containerStyles)}>
       <div style={styleToString(lineStyles)} />
       <a
-        href={getConvexUrl(link || referralCode)}
+        href={getConvexUrl(referralCode)}
         target="_blank"
         rel="noopener noreferrer"
         style={styleToString(LINK_STYLES)}

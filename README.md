@@ -42,15 +42,6 @@ function App() {
       variant="purple"
       position="bottom"
       animation="slide"
-      link={{
-        path: 'ai',  // Links to convex.dev/ai
-        referralCode: 'your-code',
-        utm: {
-          source: 'your-app',
-          medium: 'nudge',
-          campaign: 'ai-features'
-        }
-      }}
     />
   );
 }
@@ -67,15 +58,6 @@ import { ConvexNudge } from '@convex-nudge/vue';
     variant="purple"
     position="bottom"
     animation="slide"
-    :link="{
-      path: 'ai',
-      referralCode: 'your-code',
-      utm: {
-        source: 'your-app',
-        medium: 'nudge',
-        campaign: 'ai-features'
-      }
-    }"
   />
 </template>
 ```
@@ -90,15 +72,6 @@ import { ConvexNudge } from '@convex-nudge/svelte';
   variant="purple"
   position="bottom"
   animation="slide"
-  link={{
-    path: 'ai',
-    referralCode: 'your-code',
-    utm: {
-      source: 'your-app',
-      medium: 'nudge',
-      campaign: 'ai-features'
-    }
-  }}
 />
 ```
 
@@ -113,15 +86,6 @@ export default function App() {
       position="bottom"
       animation="slide"
       routeBasedDismissal
-      link={{
-        path: 'ai',
-        referralCode: 'your-code',
-        utm: {
-          source: 'your-app',
-          medium: 'nudge',
-          campaign: 'ai-features'
-        }
-      }}
     />
   );
 }
@@ -132,11 +96,7 @@ export default function App() {
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
 | `className` | `string` | `''` | Additional CSS classes |
-| `link` | `object` | `undefined` | Configuration for the Convex link |
-| `link.path` | `string` | `undefined` | Path after convex.dev (e.g. 'ai' for convex.dev/ai) |
-| `link.referralCode` | `string` | `undefined` | Referral code for the Convex URL |
-| `link.utm` | `object` | `undefined` | UTM parameters for tracking |
-| `referralCode` | `string` | `''` | **Deprecated:** Use `link.referralCode` instead |
+| `referralCode` | `string` | `''` | Optional referral code for the Convex URL |
 | `logoSize` | `number` | `24` | Size of the Convex logo in pixels |
 | `textSize` | `'xs' \| 'sm' \| 'base'` | `'xs'` | Size of the text |
 | `variant` | `'light' \| 'dark' \| 'purple' \| 'blue'` | `'light'` | Color variant |

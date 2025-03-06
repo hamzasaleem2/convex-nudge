@@ -20,7 +20,6 @@ import {
 
 const props = withDefaults(defineProps<{
   className?: string;
-  link?: NudgeOptions['link'];
   referralCode?: string;
   logoSize?: number;
   textSize?: NudgeOptions['textSize'];
@@ -32,7 +31,6 @@ const props = withDefaults(defineProps<{
   zIndex?: number;
 }>(), {
   className: DEFAULT_OPTIONS.className,
-  link: undefined,
   referralCode: DEFAULT_OPTIONS.referralCode,
   logoSize: DEFAULT_OPTIONS.logoSize,
   textSize: DEFAULT_OPTIONS.textSize,
@@ -91,7 +89,7 @@ const handleDismiss = () => {
     <div :style="containerStyles">
       <div :style="lineStyles" />
       <a
-        :href="getConvexUrl(link || referralCode)"
+        :href="getConvexUrl(referralCode)"
         target="_blank"
         rel="noopener noreferrer"
         :style="LINK_STYLES"
