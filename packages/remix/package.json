@@ -1,6 +1,6 @@
 {
   "name": "@convex-nudge/remix",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A beautiful and customizable Convex Nudge component for multiple frameworks",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -29,8 +29,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@convex-nudge/core": "workspace:*",
-    "@convex-nudge/react": "workspace:*"
+    "@convex-nudge/core": "^1.1.1",
+    "@convex-nudge/react": "^1.1.1"
   },
   "peerDependencies": {
     "@remix-run/react": "^2.0.0",
