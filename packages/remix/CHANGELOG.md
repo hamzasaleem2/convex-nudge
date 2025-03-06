@@ -1,5 +1,17 @@
 # @convex-nudge/remix
 
+## 2.0.0
+
+### Major Changes
+
+- Added support for custom paths and UTM parameters through new `link` prop while maintaining backward compatibility with `referralCode`.
+
+### Patch Changes
+
+- Updated dependencies
+  - @convex-nudge/react@2.0.0
+  - @convex-nudge/core@2.0.0
+
 ## 1.1.0
 
 ### Minor Changes

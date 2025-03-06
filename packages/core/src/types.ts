@@ -3,8 +3,24 @@ export type Variant = 'light' | 'dark' | 'purple' | 'blue';
 export type Animation = 'fade' | 'slide' | 'none';
 export type TextSize = 'xs' | 'sm' | 'base';
 
+export interface UTMParams {
+  source?: string;
+  medium?: string;
+  campaign?: string;
+  term?: string;
+  content?: string;
+}
+
+export interface LinkOptions {
+  path?: string;
+  referralCode?: string;
+  utm?: UTMParams;
+}
+
 export interface NudgeOptions {
   className?: string;
+  link?: LinkOptions;
+  /** @deprecated Use link.referralCode instead */
   referralCode?: string;
   logoSize?: number;
   textSize?: TextSize;

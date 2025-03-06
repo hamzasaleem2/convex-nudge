@@ -1,6 +1,6 @@
 {
   "name": "convex-nudge",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "description": "A beautiful and customizable Convex Nudge component for multiple frameworks",
   "scripts": {
